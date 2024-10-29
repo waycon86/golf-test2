@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./CSS/default.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./php/from.php">
+</head>
+<body>
+    <header>
+        <h1>Classic on the Dan</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            <a href="up-coming-events.html">Upcoming Events</a>
+            <a href="resgiter.html">Register</a>
+        </nav>
+    </header>
+        <main class="container">
+            <h2>Sign Up for the Classic on the Dan Charity Golf Event</h2>
+            <form action="process_registration.php" method="POST" class="registration-form">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" required>
+    
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="last_name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="team_name">Team Name (Optional):</label>
+                <input type="text" id="team_name" name="team_name">
+    
+                <label for="shirt_size">Shirt Size:</label>
+                <select id="shirt_size" name="shirt_size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">X-Large</option>
+                    <option value="XXL">XX-Large</option>
+                    <option value="L">XXX-Large</option>
+                    <option value="XL">IX-Large</option>
+                    <option value="XXL">IXX-Large</option>
+                </select>
+    
+                <label for="comments">Additional Comments (Optional):</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Let us know any special requests or needs"></textarea>
+    
+                <button type="submit" class="register-btn">Register Now</button>
+            </form>
+        </main>
+        <footer>&copy; 2025 TTS Tournaments Inc.</footer>
+    </body>
+    </html>
+    

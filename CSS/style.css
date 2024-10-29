@@ -1,0 +1,429 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Center All Text */
+body, .container, h1, h2, h3, h4, h5, h6, p, section {
+    text-align: center;
+}
+
+/* Styling for Homepage Sections */
+.welcome-section, .alz-section, .charity-help-section, .get-involved-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section h2, .alz-section h3, .charity-help-section h3, .get-involved-section h3 {
+    color: #4b2e83;
+    margin-bottom: 10px;
+}
+
+.get-involved-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4b2e83;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.get-involved-section .btn:hover {
+    background-color: #3a2264;
+}
+
+
+/* Header */
+header {
+    background-image: url(../images/image\ for\ a\ golf\ charity.webp);
+    background-position: center;
+    background-size: cover;
+    background-color: #4b2e83;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: #000;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.8);
+}
+
+header nav a:hover {
+    color: #5f5e5b;
+}
+
+/* Background Overlay */
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(128, 128, 128, 0.5); /* Gray overlay with 50% transparency */
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Positioning Text Above Overlay */
+header h1, header nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Alzheimer’s Awareness Section */
+.alz-awareness {
+    background-color: #e3f2fd;
+    border-left: 5px solid #4b2e83;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.alz-awareness h3 {
+    font-size: 1.5em;
+    color: #4b2e83;
+}
+
+.alz-awareness p {
+    font-size: 1em;
+    color: #333;
+}
+
+.alz-awareness .alz-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4b2e83;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.alz-awareness .alz-link:hover {
+    text-decoration: underline;
+}
+
+/* Profile Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 250px;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-family: 'Roboto Slab', serif;
+    color: #4b2e83;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.card .role {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Donation Form and Impact Section */
+.donation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.donation-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.donation-form h3 {
+    color: #4b2e83;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+}
+
+.donation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.donation-buttons button {
+    background-color: #4b2e83;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 23%;
+}
+
+.donation-buttons button:hover {
+    background-color: #3a2264;
+}
+
+.donation-form label,
+.donation-form input,
+.donation-form select {
+    display: block;
+    margin: 10px 0;
+}
+
+.donation-form input,
+.donation-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    background-color: #4b2e83;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.donate-btn:hover {
+    background-color: #3a2264;
+}
+
+/* Donation Impact Information */
+.donation-impact {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.donation-impact h3 {
+    color: #4b2e83;
+    font-family: 'Roboto Slab', serif;
+}
+
+.impact-topic {
+    margin-bottom: 15px;
+}
+
+.impact-topic h4 {
+    color: #333;
+    font-family: 'Roboto Slab', serif;
+}
+
+.impact-topic p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f7c948;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Registration Form */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #4b2e83;
+}
+
+.registration-form input,
+.registration-form select,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.registration-form textarea {
+    resize: vertical;
+}
+
+.register-btn {
+    background-color: #4b2e83;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.register-btn:hover {
+    background-color: #3a2264;
+}
+
+/* Container to stack cards vertically */
+.events-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Card Styles for Events and Email Signup */
+.dats-events, .email-list {
+    background-color: #fff;
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+}
+
+/* Responsive Design for All Screen Sizes */
+@media (max-width: 1200px) {
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dats-events, .email-list {
+        max-width: 90%; /* Adjusts card width on smaller screens */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dats-events, .email-list {
+        max-width: 90%; /* Adjusts card width on smaller screens */
+    }
+}

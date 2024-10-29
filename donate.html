@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="./CSS/default.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Donate to Support</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="donate.html">Donate</a>
+            <a href="up-coming-events.html">Upcoming Events</a>
+            <a href="resgiter.html">Register</a>
+        </nav>
+        </nav>
+    </header>
+    <main class="container">
+        <h2>Your Contribution Makes a Difference</h2>
+        <div class="donation-container">
+            <!-- Donation Form -->
+            <form action="process_donation.php" method="POST" class="donation-form">
+                <h3>Select Donation Amount</h3>
+                <div class="donation-buttons">
+                    <button type="button" onclick="setDonationAmount(25)">$25</button>
+                    <button type="button" onclick="setDonationAmount(50)">$50</button>
+                    <button type="button" onclick="setDonationAmount(100)">$100</button>
+                    <button type="button" onclick="setDonationAmount(250)">$250</button>
+                </div>
+                <label for="amount">Custom Amount:</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+                
+                <h3>Choose Payment Method</h3>
+                <select name="payment_method" id="payment_method" required>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="bank_account">Bank Account</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <button type="submit" class="donate-btn">Donate Now</button>
+            </form>
+
+            <!-- Donation Impact Information -->
+            <div class="donation-impact">
+                <h3>Your Donation Helps</h3>
+                <div class="impact-topic">
+                    <h4>Research</h4>
+                    <p>Funds go directly to Alzheimer's research initiatives to discover new treatments.</p>
+                </div>
+                <div class="impact-topic">
+                    <h4>Support Programs</h4>
+                    <p>Helps provide support groups and resources for those affected by Alzheimer's.</p>
+                </div>
+                <div class="impact-topic">
+                    <h4>Community Outreach</h4>
+                    <p>Educates communities about Alzheimer's disease and the importance of early diagnosis.</p>
+                </div>
+                <div class="impact-topic">
+                    <h4>Caregiver Assistance</h4>
+                    <p>Supports programs for caregivers, giving them the resources they need.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alzheimer's Awareness Section -->
+        <section class="alz-awareness">
+            <h3>About Alzheimer's Disease</h3>
+            <p>Alzheimer's is a progressive disease impacting millions worldwide. Your support helps fund critical research and resources to make a difference.</p>
+            <a href="https://www.alz.org" target="_blank" class="alz-link">Learn More</a>
+        </section>
+    </main>
+    <footer>&copy; 2025 TTS Tournaments Inc.</footer>
+
+    <script>
+        // Set donation amount when button is clicked
+        function setDonationAmount(amount) {
+            document.getElementById('amount').value = amount;
+        }
+    </script>
+</body>
+</html>
